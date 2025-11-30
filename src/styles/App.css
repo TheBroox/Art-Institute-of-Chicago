@@ -1,0 +1,118 @@
+/* Layout Classes */
+
+#root{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header, main, .subNav {
+  padding: 1rem;
+}
+
+main {
+  margin-top: 0;
+}
+
+header {
+  background-color: black;
+}
+
+header h1 {
+  font-weight: 200;
+  font-size: 5vw;
+  margin: 0;
+  color: white;
+}
+
+header nav {
+  float:right;
+  font-size: 6vw;
+  font-weight: 200;
+  text-decoration: none;
+  color: #666;
+  margin-top: 6vw;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 3.5vw;
+  font-weight: 200;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: .4vw;
+}
+
+header nav a:hover {
+  background: white !important;
+  color: black !important;
+}
+
+.subNav {
+  background-color: #ccc;
+}
+
+main {
+  flex: 1;
+}
+
+main h2 {
+  font-weight: 300;
+  font-size: 5vw;
+  margin: 0;
+}
+
+main p {
+  font-size: 1em;
+  margin: 0 0 1em;
+  font-weight: 400;
+}
+
+@media (min-width: 800px) {
+  header, main {
+    padding: 2em;
+  }
+
+  .subNav {
+    padding: 1rem 2rem;
+  }
+  
+  header nav {
+    font-size: 4.5vw;
+    margin-top: 0vw;
+  }
+
+  header nav a {
+    font-size: 2.5vw;
+    margin: .3vw;
+  }
+
+  main p {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  header, main {
+    padding: 3em;
+  }
+
+  .subNav {
+    padding: 1.5rem 3rem;
+  }
+  
+  header nav {
+    font-size: 3.6vw;
+    margin-top: .8vw;
+  }
+
+  header nav a {
+    font-size: 2.0vw;
+    margin: .3vw;
+    padding: 10px 20px;
+  }
+
+  main p {
+    font-size: 2em;
+  }
+}

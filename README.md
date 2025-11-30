@@ -1,0 +1,35 @@
+# Art Institute of Chicago SAP
+
+After a bit of research into public APIs I settled on using the [Art Institute of Chicago's (AIC) API](https://api.artic.edu/docs/) for my code challenge. It exposes the entier collection of the Insistute, both metadata about the pieces as well as images every piece. <sup>*</sup>
+
+<small><sub>* It turns out that there are many broken/missing image in their database unfortunatly. If you happen to stumble accross them please accept my aplogies and let me encourage you to randomize the gallery again.</sub></small>
+
+## Design Decisions
+
+### "Persistent" Storage
+
+Rather than stand up a database I choose to instead keep track of the user's favorites via `LocalStorage`. It works quite well as a stand in for demostrative purposes.
+
+### Black & White Design Language
+
+I took inspiration from AIC's own design language, as established by their logo and website, and choose to primarily used black, whites and greys. I assume my reasoning is the same as theirs; by keeping everything else muted the pieces of art are able to stand out more and are the focus of the user. The website doesn't compete with the collection for the user's attention.
+
+## Features
+
+The single page app allows users to explore the collection via four main features highlighted below.
+
+### Featured Artworks
+
+The AIC features twelve pieces in the collection at any given time. The entire set of twelve rotates a few times every 24 hours based on my observations but the duration that each set is featured doesn't seem to follow a regular pattern The "Featured" page of the SPA in a gallery wall allows users to see the IAC's currently featured pieces.
+
+### Exploring the Gallery
+
+The AIC asks that you don't query more than 100 pieces of art at a time. Therefore, to allow users to explore the entire collection the SPA features simple search functionaloity and the ability to see a random set of 100-ish pieces of art via the "Gallery" page.
+
+### Saving Favorites
+
+From the artwork detail pages users can favorite pieces of art in the collection. Those pieces are then displayed on the "Favorites" page. Additionally, favorited pieces of art on the "Fetured" and "Gallery" pages have small indicators in their lower right corners.
+
+### Artwork Details
+
+If a user clicks on a piece on the "Featured", "Gallery" or "Favorites" pages then they go to the piece's details page. This features a larger image of the piece as well as it's metadata, presneted in a format that is meant to be reminiscient of museum's attribution placard.

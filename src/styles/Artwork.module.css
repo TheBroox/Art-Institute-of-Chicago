@@ -1,0 +1,52 @@
+.artwork {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 3vh;
+    column-gap: 3vw;
+}
+
+.artwork img {
+    max-width: 100%
+}
+
+.info {
+    min-width: 25%;
+    overflow: wrap;
+    flex-basis: 0;
+    flex-grow: 4;
+}
+
+.info div {
+    line-height: 1;
+}
+
+.artist {
+    font-size: 2em;
+    margin-bottom: .6em;
+}
+
+.title {
+    font-size: 1.6em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.title:after {
+    content: ", ";
+}
+
+.date {
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+.medium {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-top: 1.2em;
+}
+
+.artwork button{
+    margin-top: 2em;
+    font-size: 1.2em;
+}

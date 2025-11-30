@@ -1,0 +1,66 @@
+.subNav * {
+    font-size: 1.0em;
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.subNav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    row-gap: 20px;
+}
+
+.subNav > * {
+    margin: 0 auto;
+}
+
+.subNav form {
+    width: 70%;
+}
+
+.subNav input[type=text] {
+    width: 60%;
+    padding: 6px;
+    display: inline-block;
+    border: 3px solid #222;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+}
+
+.subNav button[type=submit]{
+    border-radius: 0 5px 5px 0;
+}
+
+.subNav div {
+    font-weight: 100;
+    font-size: 2.8em;
+    line-height: 1em;
+    margin-top: -8px;
+    color: #222;
+    display: none;
+}
+
+@media (min-width: 550px) {
+    .subNav div {
+        display: inherit;
+    }
+}
+
+@media (min-width: 800px) {
+    .subNav * {
+        font-size: 1.02em;
+    }
+
+    .subNav input[type=text] {
+        padding: 7px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .subNav * {
+        font-size: 1.06em;
+    }
+}
