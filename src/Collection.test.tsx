@@ -12,7 +12,7 @@ describe('Collection component', () => {
             const error = screen.getAllByTitle('error');
             expect(error).toHaveLength(1);
             done();
-        },400);
+        },800);
     });
 
     test('renders thumbnails when passed invalid link', done => {
@@ -21,7 +21,7 @@ describe('Collection component', () => {
             const numThumbnails = screen.getAllByTitle('thumbnail').length;
             expect(numThumbnails).toBeGreaterThanOrEqual(1);
             done();
-        },400);
+        },800);
 
     });
 

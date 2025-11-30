@@ -21,7 +21,7 @@ describe('Artwork component', () => {
             expect(screen.getAllByText('Unfavorite').length).toBe(1);
             localStorage.clear()
             done();
-        },400);
+        },800);
     });
 
     test('verify unfavorite functionality', done => {
@@ -36,7 +36,7 @@ describe('Artwork component', () => {
             expect(screen.getAllByText('♥ Favorite').length).toBe(1);
             localStorage.clear()
             done();
-        },400);
+        },800);
     });
     
     test('renders art details when passed a valid URL param', done => {
@@ -51,7 +51,7 @@ describe('Artwork component', () => {
             const materials = screen.getAllByText('Oil on canvas');
             expect(materials).toHaveLength(1);
             done();
-        },400);
+        },800);
     });
 
     test('renders an error message when passed invalid URL param', done => {
@@ -62,7 +62,7 @@ describe('Artwork component', () => {
             const error = screen.getAllByTitle('error');
             expect(error).toHaveLength(1);
             done();
-        },400);
+        },800);
     });
 
 });

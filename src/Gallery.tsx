@@ -28,7 +28,7 @@ export default function Featured() {
 
     // Random selecton functionality
     const randomUrl  = () => {
-        const randomInt = Math.floor(Math.random()*400);
+        const randomInt = Math.floor(Math.random()*100);
         return `https://api.artic.edu/api/v1/artworks/?page=${randomInt}&limit=100&${fieldsString}`
     }
 
