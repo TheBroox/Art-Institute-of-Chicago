@@ -1,6 +1,6 @@
 # Art Institute of Chicago SPA
 
-After a bit of research into public APIs, I settled on using the [Art Institute of Chicago's (AIC) API](https://api.artic.edu/docs/) for my code challenge. It exposes the entire collection of the Institute, both metadata about the pieces as well as images of every piece. <sup>*</sup>
+I recently discovered the [Art Institute of Chicago's (AIC) API](https://api.artic.edu/docs/) and decided to build a toy ap to access it. It exposes the entire collection of the Institute, both metadata about the pieces as well as images of every piece. <sup>*</sup>
 
 <small><sub>* It turns out that there are quite a few broken/missing image in their database unfortunately. If you happen to stumble across them please accept my apologies and let me encourage you to randomize the gallery again.</sub></small>
 
