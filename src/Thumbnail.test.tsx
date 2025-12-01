@@ -14,14 +14,14 @@ describe('Thumbnail component', () => {
         expect(image).toHaveLength(1);
     })
 
-    test("verify favorite icon shows on favorited artwork", () => {
+    test("verify favorite icon shows on favorite artwork", () => {
         localStorage.setItem('favorites','9018')
         render( <MemoryRouter><Thumbnail artwork={artwork} highlightFavorites={true} /></MemoryRouter>);
         const fav = screen.getAllByTestId('favorite');
         expect(fav).toHaveLength(1);
     })
 
-    test("verify favorite icon doesn't shows on non-favorited artwork", () => {
+    test("verify favorite icon doesn't shows on non-favorite artwork", () => {
         localStorage.clear()
         render( <MemoryRouter><Thumbnail artwork={artwork} highlightFavorites={true} /></MemoryRouter>);
         const fav = screen.queryAllByTestId('favorite');

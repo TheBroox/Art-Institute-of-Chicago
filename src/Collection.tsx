@@ -2,7 +2,7 @@
 import { useState, useEffect, act } from 'react'
 import axios from 'axios';
 
-// Import Compoennts
+// Import Components
 import Thumbnail from './Thumbnail';
 import ErrorBlock from './ErrorBlock';
 

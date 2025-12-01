@@ -26,7 +26,7 @@ export default function Featured() {
         setTitle(`Gallery Search Results For "${search}"`);
     }
 
-    // Random selecton functionality
+    // Random selection functionality
     const randomUrl  = () => {
         const randomInt = Math.floor(Math.random()*100);
         return `https://api.artic.edu/api/v1/artworks/?page=${randomInt}&limit=100&${fieldsString}`

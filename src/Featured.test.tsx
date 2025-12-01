@@ -14,7 +14,7 @@ describe('Featured component', () => {
     });
 
     test('verify collection', () => {
-        render( <Featured />);
+        render(<Featured />);
         expect(screen.getAllByRole('list').length).toBe(1);
     });
 

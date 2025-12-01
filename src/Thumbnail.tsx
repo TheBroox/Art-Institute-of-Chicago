@@ -9,7 +9,7 @@ import {Artwork} from './definitions/artwork.model'
 
 // Constructor
 export default function Thumbnail( {artwork, highlightFavorites=true} : {artwork:Artwork, highlightFavorites:boolean} ) {
-    // Determine if artwork is favorited
+    // Determine if artwork is favorite
     const favorites = localStorage.getItem('favorites')?.split(',');
     const isFavorite = favorites?.includes(artwork.id.toString());
 

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import ErrorBlock from "./ErrorBlock";
 
-describe('ErroBlock component', () => {
+describe('ErrorBlock component', () => {
 
     test('verify async error', () => {
         render( <ErrorBlock message="async" />);

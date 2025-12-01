@@ -3,7 +3,7 @@ import { useState, useEffect, act } from 'react'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
-//Import Compoents
+//Import Components
 import ErrorBlock from './ErrorBlock';
 
 // Import TS Interface
@@ -14,7 +14,7 @@ import artworkStyles from './styles/Artwork.module.css'
 
 // Constructor
 export default function ArtworkPage() {
-    // Establish dtate
+    // Establish state
     const [artwork, setArtwork] = useState<Artwork>();
     const [isFavorite, setIsFavorite] = useState<Boolean>(false);
     const [favoriteBtnTxt, setFavoriteBtnTxt] = useState<string>('');
@@ -49,7 +49,7 @@ export default function ArtworkPage() {
             favorites.splice(index,1);
             setFavoriteBtnTxt('♥ Favorite');
         }
-        // Update LocalSorage
+        // Update LocalStorage
         if(favorites.length){
             localStorage.setItem('favorites', favorites.toString());
         } else {
